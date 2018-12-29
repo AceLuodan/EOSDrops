@@ -3,10 +3,10 @@
   "network":"http://dev.cryptolions.io:38888",
   "tokenAccount":"ridlridlridl",
   "privateKey":"5JShgqJSPsTDPPweJumazy1QdaKunEZ9mbCiq5svjphPTwzG7q5",
-  "symbol":"RIDL",
+  "symbol":"MANGO",
   "ratio":1,
-  "memo":"Fuck Marketing",
-  "batchSize":50,
+  "memo":"MANGO airDrop,welcome https://mango.best/",
+  "batchSize":5,
   "limitCap":0,
   "decimals":4
 }
