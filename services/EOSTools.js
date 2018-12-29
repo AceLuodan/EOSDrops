@@ -42,7 +42,8 @@ exports.fillTokenStats = async config => {
         json:true,
         code:config.tokenAccount,
         scope:config.symbol,
-        table:'stat'
+        table:'stats'
+       // table:'stat'
     }).then(x => {
         const token = x.rows[0];
         config.decimals = token.max_supply.split(' ')[0].split('.')[1].length;
@@ -105,7 +106,8 @@ const getBalance = async (eos, code, symbol, tuple) => {
         json:true,
         code,
         scope:format.encodeName(tuple.account, false),
-        table:'accounts'
+        table:'accountlist'
+        //table:'accounts'
     }).then(res => {
         return {account:tuple.account, dropped:!!res.rows.filter(row => row.balance.split(' ')[1] === symbol).length};
     }).catch(err => {
